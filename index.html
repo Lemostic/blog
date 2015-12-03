@@ -5,14 +5,23 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Blog : My Blog">
-
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.js></script>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Blog</title>
+    <script>
+    $(document).ready(function(){
+      $("#custom").click(function(){
+        $(this).css({"background-color":"green","border":"solid 1px gray"});
+      });
+    });
+    </script>
   </head>
 
   <body>
-
+  <div id="custom">
+  Please click here to preview effect!
+  </div>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -27,7 +36,7 @@
             </section>
         </header>
     </div>
-
+  
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
